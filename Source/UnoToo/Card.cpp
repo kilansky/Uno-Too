@@ -2,6 +2,7 @@
 
 
 #include "Card.h"
+#include "Blueprint/UserWidget.h"
 
 // Sets default values
 ACard::ACard()
@@ -15,7 +16,7 @@ ACard::ACard()
 void ACard::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame

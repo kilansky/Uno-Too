@@ -50,6 +50,11 @@ public:
 	UPROPERTY(EditAnywhere, Category = "CardInfo")
 	TEnumAsByte<ESpecialCardType> cardType;
 
+	//widget
+	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widget")
+	//	TSubclassOf<class UUserWidget> WidgetInstance;
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
