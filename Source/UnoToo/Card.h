@@ -38,21 +38,22 @@ public:
 	ACard();
 
 	//public values found on card
-	UPROPERTY(EditAnywhere, Category = "Card Info")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Card Info")
 	bool isSpecialCard;
 
-	UPROPERTY(EditAnywhere, Category = "Card Info")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Card Info")
 	int cardNumber;
 
-	UPROPERTY(EditAnywhere, Category = "CardInfo")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "CardInfo")
 	TEnumAsByte<ECardColor> cardColor;
 
-	UPROPERTY(EditAnywhere, Category = "CardInfo")
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "CardInfo")
 	TEnumAsByte<ESpecialCardType> cardType;
 
-	//widget
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widget")
-	//	TSubclassOf<class UUserWidget> WidgetInstance;
+
+	//UPROPERTY(EditAnywhere, Category = "CardInfo")
+	//	 UImage cardImage;
+
 
 
 protected:
