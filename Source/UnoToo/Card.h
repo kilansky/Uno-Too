@@ -28,7 +28,7 @@ enum class ESpecialCardType : uint8
 };
 
 
-UCLASS()
+UCLASS(BlueprintType)
 class UNOTOO_API ACard : public AActor
 {
 	GENERATED_BODY()
