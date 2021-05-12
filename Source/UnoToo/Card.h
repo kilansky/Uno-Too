@@ -28,7 +28,7 @@ enum class ESpecialCardType : uint8
 };
 
 
-UCLASS(BlueprintType)
+UCLASS()
 class UNOTOO_API ACard : public AActor
 {
 	GENERATED_BODY()
@@ -38,23 +38,17 @@ public:
 	ACard();
 
 	//public values found on card
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Card Info")
+	UPROPERTY(EditAnywhere, Category = "Card Info")
 	bool isSpecialCard;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Card Info")
+	UPROPERTY(EditAnywhere, Category = "Card Info")
 	int cardNumber;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "CardInfo")
+	UPROPERTY(EditAnywhere, Category = "CardInfo")
 	TEnumAsByte<ECardColor> cardColor;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "CardInfo")
+	UPROPERTY(EditAnywhere, Category = "CardInfo")
 	TEnumAsByte<ESpecialCardType> cardType;
-
-
-	//UPROPERTY(EditAnywhere, Category = "CardInfo")
-	//	 UImage cardImage;
-
-
 
 protected:
 	// Called when the game starts or when spawned
